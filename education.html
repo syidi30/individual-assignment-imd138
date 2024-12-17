@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            padding: 30px 10%;
+        }
+
+        h2 {
+            color: green;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: green;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .education-section {
+            background: white;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s;
+        }
+
+        .education-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .education-section h3 {
+            color: #0056b3;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .education-section p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .achievements,
+        .extracurriculars {
+            margin-left: 20px;
+            font-size: 1.1em;
+            list-style-type: square;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .school-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+		
+		marquee {
+            font-size: 1.2em;
+            color: green;
+            font-weight: bold;
+            padding: 10px;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            animation: fadeInDown 1s;
+        }
+
+        audio {
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: url('images/background.jpeg') no-repeat center center/cover; height: 30vh;">
+    <div class="header-content">
+        <h1> My Education </h1>
+    </div>
+</header>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+       
+    </nav>
+    <main>
+		<marquee behavior="scroll" direction="left" scrollamount="6">
+            The place that taught me to be a useful person!
+        </marquee>
+
+     
+        <h2>Education Details</h2>
+        <div class="education-section">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background-color: black; color: green;">
+                        <th style="padding: 10px; text-align: left;">Institution</th>
+                        <th style="padding: 10px; text-align: left;">Program</th>
+                        <th style="padding: 10px; text-align: left;">Year</th>
+                        <th style="padding: 10px; text-align: left;">Achievements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: grey;">
+                        <td style="padding: 10px; display: flex; align-items: center;">
+                            <img src="images/education1.jpg" alt="Sekolah Rendah Islam Darul Aman (SRIDA) Logo" class="school-logo">
+                            Sekolah Rendah Islam Darul Aman (SRIDA) 
+                        </td>
+                        <td style="padding: 10px;">Primary Education</td>
+                        <td style="padding: 10px;">2011 - 2016</td>
+                        <td style="padding: 10px;">UPSR (3B, 1C, 2D)</td>
+                    </tr>
+                    <tr style="background-color: pink;">
+                        <td style="padding: 10px; display: flex; align-items: center;">
+                            <img src="images/education2 .jpeg" alt="Maktab Mahmud Pendang (MMPG) logo" class="school-logo">
+                           Maktab Mahmud Pendang (MMPG)
+                        </td>
+                        <td style="padding: 10px;">Secondary Education </td>
+                        <td style="padding: 10px;">2017 - 2020</td>
+                        <td style="padding: 10px;">Pertandingan kawad kaki tahun(2018) peringkat sekolah, PT3 (2A)</td>
+                    </tr>
+                    <tr style="background-color: grey;">
+                        <!-- <td style="padding: 10px;">SMK Dato' Wan Mohd Saman</td> -->
+                        <td style="padding: 10px; display: flex; align-items: center;">
+                            <img src="images/education3.jpeg" alt="SMK Dato' Wan Mohd Saman Logo" class="school-logo">
+                            SMK Dato' Wan Mohd Saman
+                        </td>
+                        <td style="padding: 10px;">Secondary Education </td>
+                        <td style="padding: 10px;">2020 - 2022</td>
+                        <td style="padding: 10px;">Pelajar cemerlang SPM Tahun 2021, SPM 4A </td>
+                    </tr>
+                    <tr style="background-color: pink;">
+                        <!-- <td style="padding: 10px;">UiTM Cawangan Kedah, Kampus Sungai Petani</td> -->
+                        <td style="padding: 10px; display: flex; align-items: center;">
+                            <img src="images/education4.jpg" alt="UiTM Logo" class="school-logo">
+                            UiTM Cawangan Kedah, Kampus Sungai Petani
+                        </td>
+                        <td style="padding: 10px;">Diploma in Iformation Management</td>
+                        <td style="padding: 10px;">2022 - Present</td>
+                        <td style="padding: 10px;">Digital Bridge: Smart Social Media Outreach Program (2024)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <audio autoplay controls>
+        <source src="audio/background.mp3" type="audio/mpeg">
+    </audio>
+    <footer>
+        <p>&copy; 2024 Syidizaim | <a href="index.html">Home</a> 
+    </footer>
+</body>
+</html>

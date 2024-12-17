@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            padding: 30px 10%;
+        }
+
+        h2 {
+            color: green;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: green;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .about-project,
+        .testimonials {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .about-project p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+		
+		.about-project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		}
+
+        .testimonials blockquote {
+            background: #f9f9ff;
+            padding: 20px;
+            border-left: 5px solid #00b4d8;
+            font-style: italic;
+            font-size: 1.1em;
+			transition: transform 0.3s ease, box-shadow 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .testimonials cite {
+            font-weight: bold;
+            display: block;
+            text-align: right;
+        }
+		
+		.testimonials:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		}
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        marquee {
+            font-size: 1.2em;
+            color: green;
+            font-weight: bold;
+            padding: 10px;
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            animation: fadeInDown 1s;
+        }
+
+        audio {
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: url('images/background.jpeg') no-repeat center center/cover; height: 30vh;">
+    <div class="header-content">
+        <h1> Welcome To Syidi Website </h1>
+    </div>
+</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+        
+    </nav>
+    <main>
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            Welcome to My Personal Website! Explore more about my self!
+        </marquee>
+        <h2>Profile picture</h2>
+        <div style="text-align: center;">
+  <img src="images/profile picture.jpeg">
+</div>
+
+            </main>
+    <audio autoplay controls>
+        <source src="audio/background.mp3" type="audio/mp3">
+    </audio>
+    <footer>
+        <p>&copy; 2024 Syidizaim | <a href="index.html">Home</a> 
+    </footer>
+</body>
+</html>
